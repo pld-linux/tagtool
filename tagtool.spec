@@ -1,5 +1,5 @@
 Summary:	MP3 and Ogg tag editor
-Summary(pl):	Edytor tagów MP3 i OGG
+Summary(pl):	Edytor znaczników MP3 i Ogg
 Name:		tagtool
 Version:	0.12
 Release:	1
@@ -9,11 +9,12 @@ Source0:	http://dl.sourceforge.net/tagtool/%{name}-%{version}.tar.gz
 # Source0-md5:	43a05e1b84ffb5639986788b1cf3c5b1
 URL:		http://pwp.netcabo.pt/paol/tagtool/
 BuildRequires:	autoconf
-BuildRequires:	gtk+2-devel >= 1:2.4.0
-BuildRequires:	libglade >= 2.4.0
+BuildRequires:	gtk+2-devel >= 2:2.4.0
 BuildRequires:	id3lib-devel
+BuildRequires:	libglade >= 2.4.0
 BuildRequires:	libogg-devel
 BuildRequires:	libvorbis-devel
+Requires:	gtk+2 >= 2:2.4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,32 +46,35 @@ The mass tag and mass rename features can handle filenames in any
 format thanks to an easily configurable format template.
 
 %description -l pl
-Audio Tag Tool to program do zarz±dzania polami inforacyjnymi
-w plikach MP3 i OGG Vorbis, najczê¶ciej zwanymi tagami.
+Audio Tag Tool to program do zarz±dzania polami informacyjnymi
+w plikach MP3 i Ogg Vorbis, najczê¶ciej zwanymi znacznikami lub
+"tagami".
 
-Tat Tool mo¿e byæ u¿yty do edycji tagów jeden po jednym, ale
-najbardziej u¿yteczn± cech± jest zdolno¶æ do ³atwego pisania tagów czy
-zamiany setek plików na raz w ka¿dym po¿±danym formacie.
+Tag Tool mo¿e byæ u¿yty do edycji znaczników jeden po jednym, ale
+najbardziej u¿yteczn± cech± jest zdolno¶æ do ³atwego pisania
+znaczników czy zamiany setek plików na raz w ka¿dym po¿±danym
+formacie.
 
-Interfejst jest podzielony na dwie sekcje, z list± dostêpnych plików
+Interfejs jest podzielony na dwie sekcje, z list± dostêpnych plików
 po lewej i zestawem etykiet po prawej. Ka¿da etykieta odpowiada jako
 jedna z g³ównych operacji jak± Audio Tag Tool potrafi zrobiæ:
 
-- Edytor tagów pozwala Ci edytowaæ tagi indywidualnie
-- Tagowanie wielu plików: mo¿esz ustawiæ taki w wielu plikach
-  jednocze¶nie. Pola tagów mog± byæ ustawione do ustalonej warto¶ci, 
-  wstawione automatycznie z nazwy pliku czy pozostawione bez zmian.
-- Czyszczenie tagów pozwala Ci na usuwanie tagów z wielu plików na
-  raz. Dla plików MP3 jest mo¿liwo¶æ wybyboru czy usuwaæ tagi ID3v1 czy
-  ID3v2.
-- Przenie¶/Zmieñ nazwê wielu plikom: mo¿esz zmieniæ nazwê wielu plikom
-  na raz i/lub podzieliæ je na katalogi. Nazwy plików mog± byæ
-  bazowane na zawarto¶ci tagów.
-- Tworzenie playlists. Playlisty mog± byæ sortowane poprzez nazwê albo
-  dowoly tag.
+- Edytor znaczników pozwala modyfikowaæ znaczniki indywidualnie
+- Oznaczanie wielu plików: mo¿na ustawiæ znaczniki w wielu plikach
+  jednocze¶nie. Pola znaczników mog± byæ ustawione na ustalon±
+  warto¶æ, wstawione automatycznie z nazwy pliku albo pozostawione bez
+  zmian.
+- Czyszczenie znaczników pozwala na usuwanie znaczników z wielu plików
+  na raz. Dla plików MP3 jest mo¿liwo¶æ wyboru czy usuwaæ znaczniki
+  ID3v1 czy ID3v2.
+- Przenoszenie/zmiana nazwy wielu plików: mo¿na zmieniæ nazwê wielu
+  plikom na raz i/lub podzieliæ je na katalogi. Nazwy plików mog± byæ
+  bazowane na zawarto¶ci znaczników.
+- Tworzenie playlist. Playlisty mog± byæ sortowane po nazwie albo
+  dowolnym znaczniku.
 
-Mo¿liwo¶æ masowego tagowania lub zamiana nazwy tagów mo¿e dotyczyæ
-dowolnego formatu plików dziêki ³atwemu formatowi szablonu.
+Mo¿liwo¶æ masowego oznaczania lub zamiana nazwy znaczników mo¿e
+dotyczyæ dowolnego formatu plików dziêki ³atwemu formatowi szablonu.
 
 %prep
 %setup -q
@@ -84,7 +88,8 @@ dowolnego formatu plików dziêki ³atwemu formatowi szablonu.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name} --with-gnome --all-name
 
@@ -95,8 +100,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/%{name}
-%{_desktopdir}/%{name}.desktop
-%{_pixmapsdir}/*
+%dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*.png
 %{_datadir}/%{name}/*.dtd
 %{_datadir}/%{name}/*.glade
+%{_desktopdir}/%{name}.desktop
+%{_pixmapsdir}/*
