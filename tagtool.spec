@@ -1,4 +1,5 @@
 Summary:	MP3 and Ogg tag editor
+Summary(pl):	Edytor tagów MP3 i OGG
 Name:		tagtool
 Version:	0.12
 Release:	1
@@ -42,6 +43,34 @@ corresponds to one of the main operations Audio Tag Tool can do:
 
 The mass tag and mass rename features can handle filenames in any
 format thanks to an easily configurable format template.
+
+%description -l pl
+Audio Tag Tool to program do zarz±dzania polami inforacyjnymi
+w plikach MP3 i OGG Vorbis, najczê¶ciej zwanymi tagami.
+
+Tat Tool mo¿e byæ u¿yty do edycji tagów jeden po jednym, ale
+najbardziej u¿yteczn± cech± jest zdolno¶æ do ³atwego pisania tagów czy
+zamiany setek plików na raz w ka¿dym po¿±danym formacie.
+
+Interfejst jest podzielony na dwie sekcje, z list± dostêpnych plików
+po lewej i zestawem etykiet po prawej. Ka¿da etykieta odpowiada jako
+jedna z g³ównych operacji jak± Audio Tag Tool potrafi zrobiæ:
+
+- Edytor tagów pozwala Ci edytowaæ tagi indywidualnie
+- Tagowanie wielu plików: mo¿esz ustawiæ taki w wielu plikach
+  jednocze¶nie. Pola tagów mog± byæ ustawione do ustalonej warto¶ci, 
+  wstawione automatycznie z nazwy pliku czy pozostawione bez zmian.
+- Czyszczenie tagów pozwala Ci na usuwanie tagów z wielu plików na
+  raz. Dla plików MP3 jest mo¿liwo¶æ wybyboru czy usuwaæ tagi ID3v1 czy
+  ID3v2.
+- Przenie¶/Zmieñ nazwê wielu plikom: mo¿esz zmieniæ nazwê wielu plikom
+  na raz i/lub podzieliæ je na katalogi. Nazwy plików mog± byæ
+  bazowane na zawarto¶ci tagów.
+- Tworzenie playlists. Playlisty mog± byæ sortowane poprzez nazwê albo
+  dowoly tag.
+
+Mo¿liwo¶æ masowego tagowania lub zamiana nazwy tagów mo¿e dotyczyæ
+dowolnego formatu plików dziêki ³atwemu formatowi szablonu.
 
 %prep
 %setup -q
