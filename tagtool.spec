@@ -1,12 +1,12 @@
 Summary:	MP3 and Ogg tag editor
 Summary(pl):	Edytor znaczników MP3 i Ogg
 Name:		tagtool
-Version:	0.12
-Release:	1
+Version:	0.12.1
+Release:	0.1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/tagtool/%{name}-%{version}.tar.gz
-# Source0-md5:	43a05e1b84ffb5639986788b1cf3c5b1
+# Source0-md5:	938ef0c289ebc618f9fbc8338c3fdf23
 URL:		http://pwp.netcabo.pt/paol/tagtool/
 BuildRequires:	autoconf
 BuildRequires:	gtk+2-devel >= 2:2.4.0
