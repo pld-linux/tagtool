@@ -37,8 +37,8 @@ corresponds to one of the main operations Audio Tag Tool can do:
   once. For MP3 files it lets you choose to remove only ID3v1 or ID3v2
   tags.
 - Move/Rename Multiple Files: you can rename multiple files at once
-  and/or organize them into directories. File names can be based on the
-  contents of the tag.
+  and/or organize them into directories. File names can be based on
+  the contents of the tag.
 - Create Playlists. Playlists can be sorted by file name or by any tag
   field.
 
