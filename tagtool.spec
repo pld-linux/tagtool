@@ -1,5 +1,5 @@
 Summary:	MP3 and Ogg tag editor
-Summary(pl):	Edytor znaczników MP3 i Ogg
+Summary(pl.UTF-8):   Edytor znacznikÃ³w MP3 i Ogg
 Name:		tagtool
 Version:	0.12.1
 Release:	0.1
@@ -45,36 +45,36 @@ corresponds to one of the main operations Audio Tag Tool can do:
 The mass tag and mass rename features can handle filenames in any
 format thanks to an easily configurable format template.
 
-%description -l pl
-Audio Tag Tool to program do zarz±dzania polami informacyjnymi
-w plikach MP3 i Ogg Vorbis, najczê¶ciej zwanymi znacznikami lub
+%description -l pl.UTF-8
+Audio Tag Tool to program do zarzÄ…dzania polami informacyjnymi
+w plikach MP3 i Ogg Vorbis, najczÄ™Å›ciej zwanymi znacznikami lub
 "tagami".
 
-Tag Tool mo¿e byæ u¿yty do edycji znaczników jeden po jednym, ale
-najbardziej u¿yteczn± cech± jest zdolno¶æ do ³atwego pisania
-znaczników czy zamiany setek plików na raz w ka¿dym po¿±danym
+Tag Tool moÅ¼e byÄ‡ uÅ¼yty do edycji znacznikÃ³w jeden po jednym, ale
+najbardziej uÅ¼ytecznÄ… cechÄ… jest zdolnoÅ›Ä‡ do Å‚atwego pisania
+znacznikÃ³w czy zamiany setek plikÃ³w na raz w kaÅ¼dym poÅ¼Ä…danym
 formacie.
 
-Interfejs jest podzielony na dwie sekcje, z list± dostêpnych plików
-po lewej i zestawem etykiet po prawej. Ka¿da etykieta odpowiada jako
-jedna z g³ównych operacji jak± Audio Tag Tool potrafi zrobiæ:
+Interfejs jest podzielony na dwie sekcje, z listÄ… dostÄ™pnych plikÃ³w
+po lewej i zestawem etykiet po prawej. KaÅ¼da etykieta odpowiada jako
+jedna z gÅ‚Ã³wnych operacji jakÄ… Audio Tag Tool potrafi zrobiÄ‡:
 
-- Edytor znaczników pozwala modyfikowaæ znaczniki indywidualnie
-- Oznaczanie wielu plików: mo¿na ustawiæ znaczniki w wielu plikach
-  jednocze¶nie. Pola znaczników mog± byæ ustawione na ustalon±
-  warto¶æ, wstawione automatycznie z nazwy pliku albo pozostawione bez
+- Edytor znacznikÃ³w pozwala modyfikowaÄ‡ znaczniki indywidualnie
+- Oznaczanie wielu plikÃ³w: moÅ¼na ustawiÄ‡ znaczniki w wielu plikach
+  jednoczeÅ›nie. Pola znacznikÃ³w mogÄ… byÄ‡ ustawione na ustalonÄ…
+  wartoÅ›Ä‡, wstawione automatycznie z nazwy pliku albo pozostawione bez
   zmian.
-- Czyszczenie znaczników pozwala na usuwanie znaczników z wielu plików
-  na raz. Dla plików MP3 jest mo¿liwo¶æ wyboru czy usuwaæ znaczniki
+- Czyszczenie znacznikÃ³w pozwala na usuwanie znacznikÃ³w z wielu plikÃ³w
+  na raz. Dla plikÃ³w MP3 jest moÅ¼liwoÅ›Ä‡ wyboru czy usuwaÄ‡ znaczniki
   ID3v1 czy ID3v2.
-- Przenoszenie/zmiana nazwy wielu plików: mo¿na zmieniæ nazwê wielu
-  plikom na raz i/lub podzieliæ je na katalogi. Nazwy plików mog± byæ
-  bazowane na zawarto¶ci znaczników.
-- Tworzenie playlist. Playlisty mog± byæ sortowane po nazwie albo
+- Przenoszenie/zmiana nazwy wielu plikÃ³w: moÅ¼na zmieniÄ‡ nazwÄ™ wielu
+  plikom na raz i/lub podzieliÄ‡ je na katalogi. Nazwy plikÃ³w mogÄ… byÄ‡
+  bazowane na zawartoÅ›ci znacznikÃ³w.
+- Tworzenie playlist. Playlisty mogÄ… byÄ‡ sortowane po nazwie albo
   dowolnym znaczniku.
 
-Mo¿liwo¶æ masowego oznaczania lub zamiana nazwy znaczników mo¿e
-dotyczyæ dowolnego formatu plików dziêki ³atwemu formatowi szablonu.
+MoÅ¼liwoÅ›Ä‡ masowego oznaczania lub zamiana nazwy znacznikÃ³w moÅ¼e
+dotyczyÄ‡ dowolnego formatu plikÃ³w dziÄ™ki Å‚atwemu formatowi szablonu.
 
 %prep
 %setup -q
