@@ -1,5 +1,5 @@
 Summary:	MP3 and Ogg tag editor
-Summary(pl.UTF-8):   Edytor znaczników MP3 i Ogg
+Summary(pl.UTF-8):	Edytor znaczników MP3 i Ogg
 Name:		tagtool
 Version:	0.12.1
 Release:	0.1
