@@ -1,17 +1,17 @@
 Summary:	MP3 and Ogg tag editor
 Summary(pl.UTF-8):	Edytor znaczników MP3 i Ogg
 Name:		tagtool
-Version:	0.12.1
-Release:	0.1
+Version:	0.12.3
+Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
-Source0:	http://dl.sourceforge.net/tagtool/%{name}-%{version}.tar.gz
-# Source0-md5:	938ef0c289ebc618f9fbc8338c3fdf23
+Source0:	http://dl.sourceforge.net/tagtool/%{name}-%{version}.tar.bz2
+# Source0-md5:	447b3a505fee68a82f25dcda9377b676
 URL:		http://pwp.netcabo.pt/paol/tagtool/
 BuildRequires:	autoconf
 BuildRequires:	gtk+2-devel >= 2:2.4.0
 BuildRequires:	id3lib-devel
-BuildRequires:	libglade >= 2.4.0
+BuildRequires:	libglade2 >= 2.4.0
 BuildRequires:	libogg-devel
 BuildRequires:	libvorbis-devel
 Requires:	gtk+2 >= 2:2.4.0
@@ -91,6 +91,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+mv $RPM_BUILD_ROOT/%{_datadir}/locale/{ua,uk}
+
 %find_lang %{name} --with-gnome --all-name
 
 %clean
@@ -105,4 +107,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}/*.dtd
 %{_datadir}/%{name}/*.glade
 %{_desktopdir}/%{name}.desktop
-%{_pixmapsdir}/*
+%{_iconsdir}/*/*/*/*
